@@ -1,4 +1,5 @@
 📊 Student Score Prediction using Linear Regression
+
 📌 Project Overview
 
 This project aims to predict students' final exam scores using Machine Learning.
