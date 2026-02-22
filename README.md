@@ -12,7 +12,7 @@ Study Hours
 
 Attendance Percentage
 
-Previous Exam Score?
+Previous Exam Score
 
 The goal is to analyze feature importance and evaluate model performance using proper train-test splitting to avoid overfitting.
 
@@ -38,7 +38,7 @@ Verified dataset shape and data types
 
 Checked for missing values
 
-Created visualizations:
+📊 Visualizations Created:
 
 📈 Scatter Plot (Study Hours vs Final Score)
 
@@ -55,7 +55,7 @@ Algorithm Used: Linear Regression (Scikit-Learn)
 
 Data Split: 80% Training, 20% Testing
 
-Evaluation Metrics:
+📏 Evaluation Metrics:
 
 Mean Absolute Error (MAE)
 
@@ -66,7 +66,7 @@ Model Type	MAE	R² Score
 Original Model (3 features)	0.53	0.994
 Reduced Model (2 features)	0.33	0.997
 Engineered Model (4 features)	0.53	0.993
-🔍 Observations:
+🔍 Observations
 
 The Reduced Model (Study Hours + Attendance) performed best.
 
@@ -74,17 +74,17 @@ Removing Previous_Score slightly improved performance.
 
 Adding an interaction feature did not significantly improve results.
 
-Simpler models performed better due to small dataset size.
+Simpler models performed better due to the small dataset size.
 
 ⚠ Overfitting Check
 
-The model was also trained on the full dataset without train-test split.
+The model was also trained on the full dataset without a train-test split.
 
 Although R² increased slightly, this evaluation is unreliable because:
 
 The model was tested on the same data it was trained on.
 
-This can lead to overfitting.
+This can lead to overfitting (memorizing rather than generalizing).
 
 Using a train-test split provides a more realistic estimate of model performance.
 
@@ -120,11 +120,14 @@ Google Colab
 
 Clone the repository
 
-Open the notebook in Jupyter/Colab
+Open the notebook in Jupyter or Google Colab
 
 Run all cells sequentially
 
 📌 Conclusion
 
 Study Hours and Attendance are the strongest predictors of student performance in this dataset.
-The project demonstrates a complete Machine Learning workflow from data creation to evaluation and performance comparison.
+
+This project demonstrates a complete Machine Learning workflow — from data creation and visualization to model training, evaluation, feature comparison, and overfitting analysis.
+
+Now:
